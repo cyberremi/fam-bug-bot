@@ -1,7 +1,8 @@
-require('dotenv').config();
-process.env.PAIRING_CODE = 'true';
-process.env.AUTO_UPDATE = 'false';
+// start.js - Force pairing code for Railway
+console.log("🚀 Starting FAM Bug Bot with Pairing Code...");
 
-console.log("🚀 Starting bot with pairing code mode...");
+process.env.PAIRING_CODE = "true";
+process.env.AUTO_UPDATE = "false";
+process.env.PHONE_NUMBER = "2349124173525";
 
 require('./index.js');
